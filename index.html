@@ -6,7 +6,7 @@
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Css link -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -14,17 +14,139 @@
 <body>
     
     <!-- Parent contianer -->
-    <div class="container">
-        <div class="container">
-            <div class="jumbotron">
+    <div class="container text-center">
 
-             </div>
+        <audio controls>
+            <source src="http://www.tripletsandus.com/disney/midi/youvegot.mp3" type="audio/ogg">
+        </audio>
+
+        <div class="container-1">
+
+            <!-- Header of this game -->
+            <p> <h1 id="Htext"><bold>Disney Trivia Game</bold></h1> </p>
+
+            <!-- Instructions on this game -->
+            <p id="text">This is a Trivia Game for does who still have there inner child still awaken ! You will be given questions about disney movies related. You have twenty seconds to awnser the questions. At the end you will see your progress. Good Luck!</p>
+
+            <!-- Button that will allow the game to start -->
+            <button type="button" class="btn btn-success btn-lg startingBtn">Start Game</button> 
+            
+            <!-- This ID 'quiz' will contain the question and radio buttons -->
+            <div id="quiz">
+
+                <!-- This will display the timer -->
+                <div id="timer"></div>
+                    
+
+                <!-- Multiple Selection for answers -->
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <p id="question">1. In Aladdin, what is the name of Jasmine’s pet tiger ?</p>
+                        <input type="radio" class="form-check-input monk" name="aladin"  value="Rajah">
+                        <span id="answer">Rajah</span>
+                        <input type="radio" class="form-check-input monk" name="aladin"  value="Tigie">
+                        <span id="answer">Tigie</span>
+                        <input type="radio" class="form-check-input monk" name="aladin"  value="Raul">
+                        <span id="answer">Raul</span>
+                        <input type="radio" class="form-check-input monk" name="aladin"  value="Rami">
+                        <span id="answer">Rami</span>
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <p id="question">2.  In Toy Story, what game does the slinky play ?</p>
+                        <input type="radio" class="form-check-input monk" name="toy-story"  value="Chess">
+                        <span id="answer">Chess</span>
+                        <input type="radio" class="form-check-input monk" name="toy-story"  value="Monopoli">
+                        <span id="answer">Monopoli</span>
+                        <input type="radio" class="form-check-input monk" name="toy-story"  value="Checkers">
+                        <span id="answer">Checkers</span>
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <p id="question">3. In Peter Pan, Captain Hook had a hook on which one of his hands ? </p>
+                        
+                        <input type="radio" class="form-check-input monk" name="peter-pan"  value="His Right">
+                        <span id="answer">His Right</span>
+                        <input type="radio" class="form-check-input monk" name="peter-pan"  value="His Left">
+                         <span id="answer">His Left</span>
+
+                    </label>
+                </div>
+
+                <div class="form-check">
+                        <label class="form-check-label">
+                            <p id="question">4. What is the name of Mulan's dog ?</p>
+                            
+                            <input type="radio" class="form-check-input monk" name="mulan"  value="Little Furball">
+                            <span id="answer">Little Furball</span>
+                            <input type="radio" class="form-check-input monk" name="mulan"  value="Little Friend">
+                            <span id="answer">Little Friend</span>
+                            <input type="radio" class="form-check-input monk" name="mulan"  value="Little Brother">
+                            <span id="answer">Little Brother</span>
+                            <input type="radio" class="form-check-input monk" name="mulan"  value="Little Pup">
+                            <span id="answer">Little Pup</span>
+    
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <p id="question">5. Who was Simba's mother in Lion King ?</p>
+                            
+                            <input type="radio" class="form-check-input monk" name="lion-king"  value="Zira">
+                            <span id="answer">Zira</span>
+                            <input type="radio" class="form-check-input monk" name="lion-king"  value="Sarabi">
+                            <span id="answer">Sarabi</span>
+
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <p id="question">6. What do Aladdin and his monkey Abu steal from the marketplace when you’re first introduced to them in the movie? </p>
+                        
+                        <input type="radio" class="form-check-input monk" name="aladin-1"  value="An apple">
+                        <span id="answer">An apple</span>
+                        <input type="radio" class="form-check-input monk" name="aladin-1"  value="A loaf of bread">
+                        <span id="answer">A loaf of bread</span> 
+
+                    </label>
+                </div>
+
+                
+
+
+            </div>
+            
+            <!-- Progress Shown -->
+            <div id="progress">
+                <h1>This your progress !</h1>
+                <h4>Correct Awnsers: <span id="correct"></span></h4>
+                <h4>Wrong Awnsers: <span id="wrong"></span></h4>
+                <h4>Unanswered questions: <span id="unanswered"></span></h4>
+            </div>
+
+           
+
         </div>
-        
+
+        <!-- This is my footer -->
+        <div class="row">
+            <div class="col-md-12">
+                <footer class="footer col-xs-12  text-center">
+                    &copy; Copyright 2018 Eliezer Vazquez
+                </footer>
+            </div>
+        </div>
+       
 
     </div>
 
-
+   
 
 
 
@@ -34,7 +156,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Javascript reference -->
-    <script src="app.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 </body>
 </html>

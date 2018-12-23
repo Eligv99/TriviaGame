@@ -1,3 +1,42 @@
 body{
-    background-color:rgba(250, 129, 150, 0.616);
+    background: url('https://wallpaperplay.com/walls/full/6/a/4/130596.jpg') center 100%  ;
+}
+
+.container{
+    margin:10%;
+}
+
+.container-1{
+    background-color: rgba(15, 15, 15, 0.74);
+    position: relative;
+    height: 60%;
+    align-content: center;
+    font-family: "Times New Roman", Times, serif;
+    color:white;
+}
+
+p{
+    font-size: 135%;
+    margin: 2%;
+}
+#answer{
+    margin-right: 6%;
+}
+
+#question{
+    margin: 3%;
+}
+
+#Htext{
+    padding: 9%;
+    color:white; 
+    font-size: 300%;
+}
+
+#progress {
+    padding: 19%;
+}
+
+footer{
+    color:blanchedalmond;
 }
