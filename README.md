@@ -2,6 +2,8 @@
 
 A (slightly difficult) trivia browser game using timers built with jQuery, JavaScript, HTML/CSS. Players have 10 seconds to guess the correct answer!
 
-Try it here for yourself : 
+# Demo
 
-https://eligv99.github.io/TriviaGame/
+Try it [here](https://eligv99.github.io/TriviaGame/)
+
+
